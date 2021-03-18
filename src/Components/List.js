@@ -4,17 +4,17 @@ import { deleteList } from '../Service/actions/action';
 
 
 function List(props) {
-    console.log("listprop", props);
     return <div>
         {
-            props.todoList.map((data, index) => {
-                return <li key={index}>{data.item}
-                    <button onClick={() => props.dispatch(deleteList(data.id))}>Delete</button>
-                </li>
+            props.todoList.map((data) => {
+                return <div className="itemlist">
+                    <li key={data.id}>{data.item}
+                        <button onClick={() => props.dispatch(deleteList(data.id))}>Delete</button>
+                    </li>
+                </div>
             })
         }
     </div>
-
 
 }
 const mapStateToProps = (state) => ({

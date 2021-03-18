@@ -1,5 +1,17 @@
 .main {
     margin-top: 70px;
     text-align: center;
-    color: red;
+    ;
+}
+
+.itemlist {
+    margin-top: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+button {
+    margin-left: 10px;
 }
